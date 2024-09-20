@@ -22,18 +22,18 @@
             <div>
                 <form class="d-flex">
                     <div class="mb-3 col-6 pe-5">
-                    <label for="exampleInputEmail1" class="form-label">Card #</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="cardNumber" class="form-label">Card #</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Enter your credit card number" pattern="\d*">
                     </div>
                     <div class="mb-3 col-3 pe-5">
-                        <label for="exampleInputEmail1" class="form-label">CVC #</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="cvcNumber" class="form-label">CVC #</label>
+                        <input type="text" class="form-control" id="cvcNumber" pattern="\d*">
                     </div>
                     <div class="mb-3 col-3">
-                        <label for="exampleInputEmail1" class="form-label">Amount</label>
+                        <label for="amountField" class="form-label">Amount</label>
                         <div class="d-flex align-items-center">
                             <i class="fa-solid fa-dollar-sign"></i>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="amountField" pattern="\d*">
                         </div>
                         
                         
@@ -64,11 +64,11 @@
         
                 <form class="d-flex">
                     <div class="mb-3 col-6 pe-5">
-                    <label for="exampleInputEmail1" class="form-label">Card #</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="addressField" class="form-label">City</label>
+                    <input type="text" class="form-control" id="addressField" placeholder="Please enter your city of residence">
                     </div>
                     
-                    <label for="exampleInputEmail1" class="form-label">Amount</label>
+                    <label for="exampleInputEmail1" class="form-label">State</label>
                     <select class="myselect form-select h-50 me-3" aria-label="Default select example">
                         
                         <option selected>Pick a State</option>
@@ -90,13 +90,28 @@
             <div class="col-2 p-3">
                 <p>We accept</p>
                 <div class="bg-secondary d-flex justify-content-evenly rounded-1 pt-1 pb-1">
-                
-                <i class="fa-brands fa-cc-mastercard text-light"></i>
-                <i class="fa-brands fa-cc-visa text-light"></i>
-                <i class="fa-brands fa-cc-diners-club text-light"></i>
-                <i class="fa-brands fa-cc-amex text-light"></i>
-                </div>
+                    <label class="d-flex align-items-center text-light">
+                    <input class="form-check-input mt-0 me-1" type="radio" name="payment-method" value="mastercard" aria-label="Radio button for Mastercard">
+                    <i class="fa-brands fa-cc-mastercard text-light"></i>
 
+                    </label>
+
+                    <label class="d-flex align-items-center text-light">
+                    <input class="form-check-input mt-0 me-1" type="radio" name="payment-method" value="visa" aria-label="Radio button for Visa">
+                    <i class="fa-brands fa-cc-visa text-light"></i>
+                    </label>
+                    
+                    <label class="d-flex align-items-center text-light">
+                    <input class="form-check-input mt-0 me-1" type="radio" name="payment-method" value="diners-club" aria-label="Radio button for Diners Club">
+                    <i class="fa-brands fa-cc-diners-club text-light"></i>
+                    </label>
+                    
+                    <label class="d-flex align-items-center text-light">
+                    <input class="form-check-input mt-0 me-1" type="radio" name="payment-method" value="amex" aria-label="Radio button for Amex">
+                    <i class="fa-brands fa-cc-amex text-light"></i>
+                    </label>
+                    
+                </div>
             </div>
             <div class="col-4"></div>
             <div class="col-6">
